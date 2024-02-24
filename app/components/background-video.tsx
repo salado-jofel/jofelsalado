@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function BackgroundVideo() {
+export function BackgroundVideo() {
   return (
     <video
       autoPlay
