@@ -6,7 +6,6 @@ import { HomePage } from "./home/page";
 export default function Home() {
   return (
     <main className="h-screen w-screen relative">
-      {/* <HomePage /> */}
       <div className=" w-full pt-20 h-screen overflow-auto no-sc ">
         <HomePage />
       </div>
