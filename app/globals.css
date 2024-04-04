@@ -7,3 +7,8 @@
     font-family: "Proxima Nova", system-ui, sans-serif;
   }
 }
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../public/fonts/robot/Roboto-Regular.ttf");
+}
