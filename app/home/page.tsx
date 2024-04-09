@@ -1,7 +1,8 @@
 import React from "react";
 import HomeTitle from "./sections/home-title";
-import HomeAboutMeCarousel from "./sections/home-aboutme-carousel";
-import HomeEducationCarousel from "./sections/home-education-carousel";
+import HomeAboutMeCarousel from "./sections/home-about-me";
+import HomeEducationCarousel from "./sections/home-education";
+import HomeWorkExperience from "./sections/home-work-experience";
 
 export function HomePage() {
   return (
@@ -10,6 +11,7 @@ export function HomePage() {
         <HomeTitle />
         <HomeAboutMeCarousel />
         <HomeEducationCarousel />
+        <HomeWorkExperience />
       </section>
     </article>
   );
