@@ -35,9 +35,9 @@ export default function HomeAboutMe() {
     },
   ];
   return (
-    <div className="w-full">
+    <div className="flex flex-col gap-[30px]">
       <HomeContentTitle title="About Me" />
-      <div className="flex flex-row gap-[30px]">
+      <div className="flex flex-col md:flex-row gap-[30px] ">
         <HomeContentDetails
           details={
             <p className="text-white flex-1">

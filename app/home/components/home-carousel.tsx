@@ -17,7 +17,7 @@ export default function HomeCarousel({
   return (
     <div
       className={twMerge(
-        "bg-black  w-[350px] h-[400px] overflow-hidden rounded-lg shadow-2xl",
+        "bg-black  w-full md:w-[350px] h-[400px] overflow-hidden rounded-lg shadow-2xl",
         containerClassName
       )}
     >

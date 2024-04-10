@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/image";
+
 import HomeCarousel from "../components/home-carousel";
 import HomeContentDetails from "../components/home-content-details";
 import HomeContentTitle from "../components/home-content-title";

@@ -28,11 +28,11 @@ var images = [
 ];
 export default function HomeEducation() {
   return (
-    <div className="w-full flex items-center justify-center flex-col gap-[30px]">
+    <div className="w-full flex items-center justify-start flex-col gap-[30px] ">
       <HomeContentTitle title="Educational Attainment" />
-      <div className="flex flex-col gap-[20px] justify-center items-center">
+      <div className="flex flex-col gap-[40px] justify-center items-center">
         <HomeCarousel
-          containerClassName="w-[650px] h-[350px]"
+          containerClassName="w-full md:w-[650px] h-[400px] md:h-[350px]"
           carouselSettings={settings}
           carouselSlide={images.map((image: any) => (
             <div
