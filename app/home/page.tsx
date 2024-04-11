@@ -1,17 +1,18 @@
-import React from "react";
-import HomeTitle from "./sections/home-title";
-import HomeAboutMeCarousel from "./sections/home-about-me";
-import HomeEducationCarousel from "./sections/home-education";
-import HomeWorkExperience from "./sections/home-work-experience";
-import HomeTechStack from "./sections/home-tech-stack";
+import React, { useEffect, useState } from "react";
+import HomeTitle from "./_sections/home-title";
+import HomeAboutMeCarousel from "./_sections/home-about-me";
+import HomeWorkExperience from "./_sections/home-work-experience";
+import HomeTechStack from "./_sections/home-tech-stack";
+import { Metadata } from "next";
+import HomeEducation from "./_sections/home-education";
 
 export function HomePage() {
   return (
     <article className="pb-[100px] px-[30px]">
-      <section className="max-w-4xl mt-[30px] m-auto space-y-[100px]">
+      <section className="max-w-4xl mt-[105px] m-auto space-y-[100px]">
         <HomeTitle />
         <HomeAboutMeCarousel />
-        <HomeEducationCarousel />
+        <HomeEducation />
         <HomeWorkExperience />
         <HomeTechStack />
       </section>

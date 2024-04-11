@@ -1,9 +1,9 @@
 import React from "react";
 
-import HomeCarousel from "../components/home-carousel";
-import HomeContentDetails from "../components/home-content-details";
-import HomeContentTitle from "../components/home-content-title";
-import HomeWorkExperienceCard from "../components/home-work-experience-card";
+import HomeCarousel from "../_components/home-carousel";
+import HomeContentDetails from "../_components/home-content-details";
+import HomeContentTitle from "../_components/home-content-title";
+import HomeWorkExperienceCard from "../_components/home-work-experience-card";
 var settings = {
   dots: true,
   infinite: true,

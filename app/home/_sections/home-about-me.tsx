@@ -1,15 +1,14 @@
 "use client";
-import Slider from "@ant-design/react-slick";
 import React from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Image from "next/image";
-import ContentTitle from "../components/home-content-title";
-import ContentDetails from "../components/home-content-details";
-import Carousel from "../components/home-carousel";
-import HomeContentDetails from "../components/home-content-details";
-import HomeContentTitle from "../components/home-content-title";
-import HomeCarousel from "../components/home-carousel";
+import HomeContentDetails from "../_components/home-content-details";
+import HomeContentTitle from "../_components/home-content-title";
+import HomeCarousel from "../_components/home-carousel";
+import { useAppSelector } from "@/redux/hooks";
+import { RootState } from "@/redux/store";
+
 export default function HomeAboutMe() {
   var settings = {
     dots: false,
@@ -35,7 +34,7 @@ export default function HomeAboutMe() {
     },
   ];
   return (
-    <div className="flex flex-col gap-[30px]">
+    <div className="flex flex-col gap-[30px] ">
       <HomeContentTitle title="About Me" />
       <div className="flex flex-col md:flex-row gap-[30px] ">
         <HomeContentDetails

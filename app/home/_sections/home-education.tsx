@@ -1,8 +1,8 @@
 import React from "react";
 import Image from "next/image";
-import HomeCarousel from "../components/home-carousel";
-import HomeContentTitle from "../components/home-content-title";
-import HomeContentDetails from "../components/home-content-details";
+import HomeCarousel from "../_components/home-carousel";
+import HomeContentTitle from "../_components/home-content-title";
+import HomeContentDetails from "../_components/home-content-details";
 
 var settings = {
   dots: true,
@@ -55,7 +55,7 @@ export default function HomeEducation() {
               <div className="flex flex-col gap-[20px]">
                 <div className="flex flex-col">
                   <h1 className=" font-roboto font-[800] text-[24px]">
-                    University of Cebu - LM Campus
+                    University of Cebu - LM Campus (College)
                   </h1>
                   <span className=" font-roboto font-[800] text-[14px] text-gray-400 italic">
                     2019 - 2023

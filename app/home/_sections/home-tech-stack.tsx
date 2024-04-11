@@ -1,8 +1,8 @@
 import React from "react";
-import HomeContentDetails from "../components/home-content-details";
-import HomeContentTitle from "../components/home-content-title";
+import HomeContentDetails from "../_components/home-content-details";
+import HomeContentTitle from "../_components/home-content-title";
 import Image from "next/image";
-import HomeTechStackCard from "../components/home-tech-stack-card";
+import HomeTechStackCard from "../_components/home-tech-stack-card";
 var icons = [
   {
     id: 0,
