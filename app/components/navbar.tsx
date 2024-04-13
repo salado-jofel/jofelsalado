@@ -3,15 +3,35 @@ import React, { useEffect, useState } from "react";
 import { MdDarkMode, MdOutlineDarkMode } from "react-icons/md";
 import { Provider, useDispatch } from "react-redux";
 import { darkModePressed } from "../home/_redux/dark-mode-slice";
+import { useAppSelector } from "@/redux/hooks";
+import { RootState } from "@/redux/store";
 
 export default function Navbar() {
-  const [darkMode, setDarkMode] = useState(false);
+  const state = useAppSelector((state: RootState) => state.darkMode);
   const dispatch = useDispatch();
+  useEffect(() => {
+    const theme = localStorage.getItem("theme");
+    if (theme === "dark") {
+      dispatch(darkModePressed(true));
+    }
+  }, []);
+
+  useEffect(() => {
+    if (state.darkMode) {
+      document.documentElement.classList.add("dark");
+      localStorage.setItem("theme", "dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+      localStorage.setItem("theme", "light");
+    }
+  }, [state.darkMode]);
 
   return (
     <div className=" w-full h-[75px] bg-black fixed top-0  z-50 bg-opacity-30">
       <div className="px-10 h-full  flex flex-row justify-between items-center">
-        <div className="h-full text-white font  flex items-center">LOGO</div>
+        <div className="h-full text-white dark:text-red-500 font  flex items-center">
+          LOGO
+        </div>
         <div className="h-full text-white font flex items-center gap-[40px]">
           <span className=" font-roboto font-[800] text-[14px] cursor-pointer">
             Github
@@ -22,11 +42,10 @@ export default function Navbar() {
           <div
             className="cursor-pointer text-[24px]"
             onClick={() => {
-              setDarkMode(!darkMode);
-              dispatch(darkModePressed(!darkMode));
+              dispatch(darkModePressed(!state.darkMode));
             }}
           >
-            {darkMode == false ? <MdDarkMode /> : <MdOutlineDarkMode />}
+            {state.darkMode == false ? <MdDarkMode /> : <MdOutlineDarkMode />}
           </div>
         </div>
       </div>
