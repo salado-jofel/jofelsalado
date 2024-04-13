@@ -39,7 +39,7 @@ export default function HomeAboutMe() {
       <div className="flex flex-col md:flex-row gap-[30px] ">
         <HomeContentDetails
           details={
-            <p className="text-white flex-1">
+            <p className="text-white flex-1 ">
               Hey there! I'm Jofel Salado, a software engineer with a year of
               hands-on experience. I thrive on solving complex problems and
               crafting innovative solutions. I'm an avid learner and always
@@ -61,7 +61,7 @@ export default function HomeAboutMe() {
                 height={3032}
                 src={image.path}
                 alt={""}
-                className="object-cover w-full h-full opacity-70 bg-black"
+                className="object-cover w-full h-full opacity-70 dark:opacity-50 bg-black"
               />
             </div>
           ))}

@@ -17,7 +17,7 @@ export default function Navbar() {
   }, []);
 
   useEffect(() => {
-    if (state.darkMode) {
+    if (!state.darkMode) {
       document.documentElement.classList.add("dark");
       localStorage.setItem("theme", "dark");
     } else {
@@ -29,10 +29,10 @@ export default function Navbar() {
   return (
     <div className=" w-full h-[75px] bg-black fixed top-0  z-50 bg-opacity-30">
       <div className="px-10 h-full  flex flex-row justify-between items-center">
-        <div className="h-full text-white dark:text-red-500 font  flex items-center">
-          LOGO
+        <div className="h-full text-white  dark:text-[#8FD400] font  flex items-center font-roboto font-[1000] text-[24px] tracking-[0.5rem]">
+          JFL
         </div>
-        <div className="h-full text-white font flex items-center gap-[40px]">
+        <div className="h-full text-white dark:text-[#8FD400] font flex items-center gap-[40px]">
           <span className=" font-roboto font-[800] text-[14px] cursor-pointer">
             Github
           </span>

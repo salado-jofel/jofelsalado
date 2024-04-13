@@ -40,7 +40,7 @@ export default function HomeWorkExperience() {
                   position={"Software Engineer Intern"}
                   date={"09/19/2022 - 02/20/2023"}
                   details={
-                    <ul className="font-robot font-[800] text-[16px] text-gray-700">
+                    <ul className="font-robot font-[800] text-[16px] text-gray-700 dark:text-white">
                       <li>- Assist minor/major software development tasks</li>
                     </ul>
                   }
@@ -50,7 +50,7 @@ export default function HomeWorkExperience() {
                   position={"Software Engineer"}
                   date={"02/20/2023 - Present"}
                   details={
-                    <ul className="font-robot font-[800] text-[16px] text-gray-700">
+                    <ul className="font-robot font-[800] text-[16px] text-gray-700 dark:text-white">
                       <li>
                         - Bulding and maintaining websites using Next JS,
                         Typescript and Tailwind CSS
