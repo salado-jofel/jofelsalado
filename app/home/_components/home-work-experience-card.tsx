@@ -12,7 +12,7 @@ export default function HomeWorkExperienceCard({
   details: ReactNode;
 }) {
   return (
-    <div className="flex flex-col gap-[20px] dark:bg-[#F5F5F7]/60  bg-[#8FD400]/80 rounded-lg shadow-2xl backdrop-blur-xs p-[20px]">
+    <div className="flex flex-col gap-[20px] dark:bg-[#F5F5F7]/60  bg-[#8FD400]/80 rounded-lg shadow-2xl backdrop-blur-xs p-[20px] duration-300">
       <div className="flex flex-col">
         <h1 className=" font-roboto font-[800] text-[24px] dark:text-black text-white">
           {company}

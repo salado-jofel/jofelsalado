@@ -45,7 +45,7 @@ export default function HomeEducation() {
                 height={3032}
                 src={image.path}
                 alt={""}
-                className="object-cover w-full h-full dark:opacity-70 opacity-50 bg-black"
+                className="object-cover w-full h-full dark:opacity-70 opacity-50 bg-black duration-300"
               />
             </div>
           ))}
