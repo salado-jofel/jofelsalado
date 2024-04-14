@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from "react";
 import { MdDarkMode, MdOutlineDarkMode } from "react-icons/md";
 import Image from "next/image";
+import Link from "next/link";
 export default function Navbar() {
   const [darkMode, setDarkMode] = useState(false);
 
@@ -28,7 +29,7 @@ export default function Navbar() {
     <div className=" w-full h-[75px] bg-black fixed top-0  z-50 bg-opacity-30">
       <div className="px-10 h-full  flex flex-row justify-between items-center">
         <div className="h-full dark:text-white  text-[#8FD400] flex items-start justify-start w-full duration-300">
-          {localStorage.getItem("theme") == "dark" ? (
+          {darkMode == false ? (
             <Image
               unoptimized
               width={2000}
@@ -49,9 +50,15 @@ export default function Navbar() {
           )}
         </div>
         <div className="h-full dark:text-white text-[#8FD400] font flex items-center gap-[40px] duration-300">
-          <span className=" font-roboto font-[800] text-[14px] cursor-pointer">
-            Github
-          </span>
+          <Link
+            href={"https://github.com/salado-jofel/my-portfolio"}
+            target="_blank"
+          >
+            <span className=" font-roboto font-[800] text-[14px] cursor-pointer">
+              Github
+            </span>
+          </Link>
+
           <span className=" font-roboto font-[800] text-[14px] cursor-pointer">
             Resume
           </span>
