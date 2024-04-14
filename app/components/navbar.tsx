@@ -28,7 +28,7 @@ export default function Navbar() {
     <div className=" w-full h-[75px] bg-black fixed top-0  z-50 bg-opacity-30">
       <div className="px-10 h-full  flex flex-row justify-between items-center">
         <div className="h-full dark:text-white  text-[#8FD400] font  flex items-center font-roboto font-[1000] text-[24px] tracking-[0.5rem]">
-          JFL ${localStorage.getItem("theme")}
+          JFL
         </div>
         <div className="h-full dark:text-white text-[#8FD400] font flex items-center gap-[40px]">
           <span className=" font-roboto font-[800] text-[14px] cursor-pointer">
