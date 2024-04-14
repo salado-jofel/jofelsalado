@@ -1,4 +1,3 @@
-"use client";
 import React from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -6,8 +5,6 @@ import Image from "next/image";
 import HomeContentDetails from "../_components/home-content-details";
 import HomeContentTitle from "../_components/home-content-title";
 import HomeCarousel from "../_components/home-carousel";
-import { useAppSelector } from "@/redux/hooks";
-import { RootState } from "@/redux/store";
 
 export default function HomeAboutMe() {
   var settings = {
@@ -61,7 +58,7 @@ export default function HomeAboutMe() {
                 height={3032}
                 src={image.path}
                 alt={""}
-                className="object-cover w-full h-full opacity-70 dark:opacity-50 bg-black"
+                className="object-cover w-full h-full dark:opacity-70 opacity-50 bg-black"
               />
             </div>
           ))}

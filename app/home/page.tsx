@@ -1,9 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import HomeTitle from "./_sections/home-title";
 import HomeAboutMeCarousel from "./_sections/home-about-me";
 import HomeWorkExperience from "./_sections/home-work-experience";
 import HomeTechStack from "./_sections/home-tech-stack";
-import { Metadata } from "next";
 import HomeEducation from "./_sections/home-education";
 
 export function HomePage() {

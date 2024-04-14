@@ -15,7 +15,7 @@ export default function HomeTechStackCard({
       <h1 className="font-roboto text-white font-[800] text-[16px]">
         {iconTitle}
       </h1>
-      <div className=" border-2 p-[25px] rounded-lg border-white dark:border-[#8FD400] group-hover:bg-[#F5F5F7]/60 duration-300">
+      <div className=" border-2 p-[25px] rounded-lg dark:border-white border-[#8FD400] group-hover:bg-[#F5F5F7]/60 duration-300">
         <Image
           width={100}
           height={100}

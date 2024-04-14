@@ -1,9 +1,6 @@
-"use client";
 import "./globals.css";
 import Navbar from "./components/navbar";
 import { BackgroundVideo } from "./components/background-video";
-import { Provider } from "react-redux";
-import { store } from "@/redux/store";
 
 export default function RootLayout({
   children,
@@ -12,13 +9,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <Provider store={store}>
-        <body>
-          <Navbar />
-          {children}
-          <BackgroundVideo />
-        </body>
-      </Provider>
+      <body>
+        <Navbar />
+        {children}
+        <BackgroundVideo />
+      </body>
     </html>
   );
 }

@@ -1,7 +1,4 @@
-// import lofiVideo from "../public/assets/videos/day.mp4";
-
 import { Metadata } from "next";
-import { BackgroundAudio } from "./components/background-audio";
 import { HomePage } from "./home/page";
 
 export const metadata: Metadata = {

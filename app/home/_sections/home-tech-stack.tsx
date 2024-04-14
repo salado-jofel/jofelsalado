@@ -1,7 +1,6 @@
 import React from "react";
 import HomeContentDetails from "../_components/home-content-details";
 import HomeContentTitle from "../_components/home-content-title";
-import Image from "next/image";
 import HomeTechStackCard from "../_components/home-tech-stack-card";
 var icons = [
   {

@@ -12,15 +12,15 @@ export default function HomeWorkExperienceCard({
   details: ReactNode;
 }) {
   return (
-    <div className="flex flex-col gap-[20px] bg-[#F5F5F7]/60  dark:bg-[#8FD400]/80 rounded-lg shadow-2xl backdrop-blur-xs p-[20px]">
+    <div className="flex flex-col gap-[20px] dark:bg-[#F5F5F7]/60  bg-[#8FD400]/80 rounded-lg shadow-2xl backdrop-blur-xs p-[20px]">
       <div className="flex flex-col">
-        <h1 className=" font-roboto font-[800] text-[24px] text-black dark:text-white">
+        <h1 className=" font-roboto font-[800] text-[24px] dark:text-black text-white">
           {company}
         </h1>
-        <span className=" font-roboto font-[800] text-[14px] text-gray-700 dark:text-white">
+        <span className=" font-roboto font-[800] text-[14px] dark:text-gray-700 text-white">
           {position}
         </span>
-        <span className=" font-roboto font-[800] text-[12px] text-gray-700 italic dark:text-white">
+        <span className=" font-roboto font-[800] text-[12px] dark:text-gray-700 italic text-white">
           {date}
         </span>
       </div>

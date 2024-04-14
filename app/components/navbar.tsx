@@ -1,39 +1,36 @@
 "use client";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { MdDarkMode, MdOutlineDarkMode } from "react-icons/md";
-import { useDispatch } from "react-redux";
-import { darkModePressed } from "../home/_redux/dark-mode-slice";
-import { useAppSelector } from "@/redux/hooks";
-import { RootState } from "@/redux/store";
 
 export default function Navbar() {
-  const state = useAppSelector((state: RootState) => state.darkMode);
-  const dispatch = useDispatch();
+  const [darkMode, setDarkMode] = useState(false);
 
   useEffect(() => {
     const theme = localStorage.getItem("theme");
     if (theme === "dark") {
-      dispatch(darkModePressed(true));
+      setDarkMode(true);
+    } else {
+      setDarkMode(false);
     }
-  }, [dispatch]); // Include dispatch in the dependency array
+  }, []); // Include dispatch in the dependency array
 
   useEffect(() => {
-    if (!state.darkMode) {
+    if (darkMode == true) {
       document.documentElement.classList.add("dark");
       localStorage.setItem("theme", "dark");
     } else {
       document.documentElement.classList.remove("dark");
       localStorage.setItem("theme", "light");
     }
-  }, [state.darkMode]);
+  }, [darkMode]);
 
   return (
     <div className=" w-full h-[75px] bg-black fixed top-0  z-50 bg-opacity-30">
       <div className="px-10 h-full  flex flex-row justify-between items-center">
-        <div className="h-full text-white  dark:text-[#8FD400] font  flex items-center font-roboto font-[1000] text-[24px] tracking-[0.5rem]">
-          JFL
+        <div className="h-full dark:text-white  text-[#8FD400] font  flex items-center font-roboto font-[1000] text-[24px] tracking-[0.5rem]">
+          JFL ${localStorage.getItem("theme")}
         </div>
-        <div className="h-full text-white dark:text-[#8FD400] font flex items-center gap-[40px]">
+        <div className="h-full dark:text-white text-[#8FD400] font flex items-center gap-[40px]">
           <span className=" font-roboto font-[800] text-[14px] cursor-pointer">
             Github
           </span>
@@ -43,10 +40,10 @@ export default function Navbar() {
           <div
             className="cursor-pointer text-[24px]"
             onClick={() => {
-              dispatch(darkModePressed(!state.darkMode));
+              setDarkMode(!darkMode);
             }}
           >
-            {state.darkMode === false ? <MdDarkMode /> : <MdOutlineDarkMode />}
+            {darkMode === false ? <MdDarkMode /> : <MdOutlineDarkMode />}
           </div>
         </div>
       </div>
