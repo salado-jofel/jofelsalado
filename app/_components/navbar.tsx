@@ -36,7 +36,7 @@ export default function Navbar() {
               height={346}
               src={"/assets/images/logodark.png"}
               alt={""}
-              className="object-contain w-[170px] h-full duration-300"
+              className="object-contain w-[130px]  md:w-[170px] h-full duration-300"
             />
           ) : (
             <Image
@@ -45,11 +45,11 @@ export default function Navbar() {
               height={346}
               src={"/assets/images/logolight.png"}
               alt={""}
-              className="object-contain w-[170px] h-full duration-300"
+              className="object-contain w-[130px] md:w-[170px] h-full duration-300"
             />
           )}
         </div>
-        <div className="h-full dark:text-white text-[#8FD400] font flex items-center gap-[40px] duration-300">
+        <div className="h-full dark:text-white text-[#8FD400] font flex items-center gap-[40px] duration-300 justify-center">
           <Link
             href={"https://github.com/salado-jofel/my-portfolio"}
             target="_blank"
@@ -59,9 +59,14 @@ export default function Navbar() {
             </span>
           </Link>
 
-          <span className=" font-roboto font-[800] text-[14px] cursor-pointer">
-            Resume
-          </span>
+          <Link
+            href={""}
+            target="_blank"
+          >
+            <span className=" font-roboto font-[800] text-[14px] cursor-pointer">
+              Resume
+            </span>
+          </Link>
           <div
             className="cursor-pointer text-[24px]"
             onClick={() => {
