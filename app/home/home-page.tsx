@@ -9,12 +9,11 @@ export function HomePage() {
   return (
     <article className="pb-[100px] px-[30px]">
       <section className="max-w-4xl mt-[105px] m-auto space-y-[100px]">
-        {/* <HomeTitle />
+        <HomeTitle />
         <HomeAboutMeCarousel />
         <HomeEducation />
         <HomeWorkExperience />
-        <HomeTechStack /> */}
-        asf
+        <HomeTechStack />
       </section>
     </article>
   );
