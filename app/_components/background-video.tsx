@@ -16,9 +16,10 @@ export function BackgroundVideo() {
         autoPlay
         loop
         muted
+        className=" absolute top-0 z-[-1] w-full h-full object-cover visible dark:invisible"
       >
         <source
-          src="day.mp4"
+          src="/day.mp4"
           type="video/mp4"
         />
         Your browser does not support the video tag.
