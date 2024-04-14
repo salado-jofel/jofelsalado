@@ -54,6 +54,7 @@ export default function HomeAboutMe() {
               className="h-[400px] overflow-hidden bg-black"
             >
               <Image
+                unoptimized
                 width={4032}
                 height={3032}
                 src={image.path}

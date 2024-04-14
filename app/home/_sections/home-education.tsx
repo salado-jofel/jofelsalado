@@ -40,6 +40,7 @@ export default function HomeEducation() {
               className="h-[350px] overflow-hidden bg-black"
             >
               <Image
+                unoptimized
                 width={4032}
                 height={3032}
                 src={image.path}
