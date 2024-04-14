@@ -28,11 +28,13 @@ var images = [
 ];
 export default function HomeEducation() {
   return (
-    <div className="w-full flex items-center justify-start flex-col gap-[30px] ">
-      <HomeContentTitle title="Educational Attainment" />
+    <div className=" flex  flex-col gap-[30px] ">
+      <div className="w-full flex justify-center items-center">
+        <HomeContentTitle title="Educational Attainment" />
+      </div>
       <div className="flex flex-col gap-[40px] justify-center items-center">
         <HomeCarousel
-          containerClassName="w-full md:w-[650px] h-[400px] md:h-[350px]"
+          containerClassName="w-full md:w-[650px] h-[350px] "
           carouselSettings={settings}
           carouselSlide={images.map((image: any) => (
             <div
@@ -72,5 +74,43 @@ export default function HomeEducation() {
         </div>
       </div>
     </div>
+    // <div className="flex flex-col gap-[30px] ">
+    //   <div className="w-full flex items-center  justify-center">
+    //     <HomeContentTitle title="Educational Attainment" />
+    //   </div>
+
+    //   <div className="flex flex-col md:flex-col justify-center items-center gap-[30px] ">
+    //     <HomeCarousel
+    //       containerClassName="w-full md:w-[650px] h-[400px] md:h-[350px]"
+    //       carouselSettings={settings}
+    //       carouselSlide={images.map((image: any) => (
+    //         <div
+    //           key={image.id}
+    //           className="h-[350px] overflow-hidden bg-black"
+    //         >
+    //           <Image
+    //             unoptimized
+    //             width={4032}
+    //             height={3032}
+    //             src={image.path}
+    //             alt={""}
+    //             className="object-cover w-full h-full dark:opacity-70 opacity-50 bg-black duration-300"
+    //           />
+    //         </div>
+    //       ))}
+    //     />
+    //     <HomeContentDetails
+    //       details={
+    //         <p className="text-white flex-1 ">
+    //           Hey there! I&apos;m Jofel Salado, a software engineer with a year
+    //           of hands-on experience. I thrive on solving complex problems and
+    //           crafting innovative solutions. I&apos;m an avid learner and always
+    //           exploring new technologies. Let&apos;s build something amazing
+    //           together!
+    //         </p>
+    //       }
+    //     />
+    //   </div>
+    // </div>
   );
 }

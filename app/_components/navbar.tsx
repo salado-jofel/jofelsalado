@@ -26,7 +26,7 @@ export default function Navbar() {
   }, [darkMode]);
 
   return (
-    <div className=" w-full h-[75px] bg-black fixed top-0  z-50 bg-opacity-30">
+    <div className=" w-full h-[75px] bg-black fixed top-0  z-50 ">
       <div className="px-10 h-full  flex flex-row justify-between items-center">
         <div className="h-full dark:text-white  text-[#8FD400] flex items-start justify-start w-full duration-300">
           {darkMode == false ? (
