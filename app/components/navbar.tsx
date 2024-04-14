@@ -1,7 +1,7 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { MdDarkMode, MdOutlineDarkMode } from "react-icons/md";
-import { Provider, useDispatch } from "react-redux";
+import { useDispatch } from "react-redux";
 import { darkModePressed } from "../home/_redux/dark-mode-slice";
 import { useAppSelector } from "@/redux/hooks";
 import { RootState } from "@/redux/store";
@@ -9,12 +9,13 @@ import { RootState } from "@/redux/store";
 export default function Navbar() {
   const state = useAppSelector((state: RootState) => state.darkMode);
   const dispatch = useDispatch();
+
   useEffect(() => {
     const theme = localStorage.getItem("theme");
     if (theme === "dark") {
       dispatch(darkModePressed(true));
     }
-  }, []);
+  }, [dispatch]); // Include dispatch in the dependency array
 
   useEffect(() => {
     if (!state.darkMode) {
@@ -24,7 +25,7 @@ export default function Navbar() {
       document.documentElement.classList.remove("dark");
       localStorage.setItem("theme", "light");
     }
-  }, [state.darkMode, dispatch]);
+  }, [state.darkMode]);
 
   return (
     <div className=" w-full h-[75px] bg-black fixed top-0  z-50 bg-opacity-30">
@@ -45,7 +46,7 @@ export default function Navbar() {
               dispatch(darkModePressed(!state.darkMode));
             }}
           >
-            {state.darkMode == false ? <MdDarkMode /> : <MdOutlineDarkMode />}
+            {state.darkMode === false ? <MdDarkMode /> : <MdOutlineDarkMode />}
           </div>
         </div>
       </div>
