@@ -24,7 +24,7 @@ export default function Navbar() {
       document.documentElement.classList.remove("dark");
       localStorage.setItem("theme", "light");
     }
-  }, [state.darkMode]);
+  }, [state.darkMode, dispatch]);
 
   return (
     <div className=" w-full h-[75px] bg-black fixed top-0  z-50 bg-opacity-30">
