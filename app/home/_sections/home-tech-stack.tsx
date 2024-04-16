@@ -54,7 +54,7 @@ export default function HomeTechStack() {
         <div className="flex w-full items-center justify-start">
           <HomeContentDetails
             details={
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[50px]">
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-[50px] duration-300">
                 {icons.map((value: any) => (
                   <HomeTechStackCard
                     key={value.id}

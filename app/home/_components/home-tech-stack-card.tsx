@@ -12,7 +12,7 @@ export default function HomeTechStackCard({
 }) {
   return (
     <div className="flex flex-col items-center justify-center gap-[10px] hover:scale-125 duration-300 cursor-pointer group">
-      <h1 className="font-roboto text-white font-[800] text-[16px]">
+      <h1 className="font-roboto text-white font-[800] text-[14px] sm:text-[16px]">
         {iconTitle}
       </h1>
       <div className=" border-2 p-[25px] rounded-lg dark:border-white border-[#8FD400] dark:group-hover:bg-[#F5F5F7]/60 group-hover:bg-[#8FD400]/60  duration-300">

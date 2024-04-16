@@ -17,8 +17,8 @@ export default function HomeWorkExperience() {
                   position={"Software Engineer Intern"}
                   date={"09/19/2022 - 02/20/2023"}
                   details={
-                    <ul className="font-robot font-[800] text-[16px] dark:text-gray-700 text-white duration-300">
-                      <li>- Assist minor/major software development tasks</li>
+                    <ul className="font-robot font-[800] text-[14px] sm:text-[16px] dark:text-gray-700 text-white duration-300">
+                      <li>- Assist minor/major front-end development tasks</li>
                     </ul>
                   }
                 />
@@ -27,14 +27,14 @@ export default function HomeWorkExperience() {
                   position={"Software Engineer"}
                   date={"02/20/2023 - Present"}
                   details={
-                    <ul className="font-robot font-[800] text-[16px] dark:text-gray-700 text-white duration-300">
+                    <ul className="font-robot font-[800] text-[14px] sm:text-[16px] dark:text-gray-700 text-white duration-300 space-y-[10px]">
                       <li>
-                        - Bulding and maintaining websites using Next JS,
-                        Typescript and Tailwind CSS
+                        - Bulding and maintaining front-end websites using Next
+                        JS, Typescript and Tailwind CSS
                       </li>
                       <li>
-                        - Bulding and maintaining mobile apps for both Android
-                        and iOS using Flutter
+                        - Bulding and maintaining front-end mobile apps for both
+                        Android and iOS using Flutter
                       </li>
                     </ul>
                   }

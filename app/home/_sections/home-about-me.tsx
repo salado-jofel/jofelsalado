@@ -19,15 +19,15 @@ export default function HomeAboutMe() {
   var images = [
     {
       id: 0,
-      path: "/assets/images/aboutme1.jpg",
+      path: "/assets/images/aboutme1light.jpg",
     },
     {
       id: 1,
-      path: "/assets/images/aboutme2.jpg",
+      path: "/assets/images/aboutme2o.jpg",
     },
     {
       id: 3,
-      path: "/assets/images/aboutme3.jpg",
+      path: "/assets/images/aboutme3o.jpg",
     },
   ];
   return (

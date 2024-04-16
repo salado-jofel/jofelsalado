@@ -57,14 +57,14 @@ export default function HomeEducation() {
             details={
               <div className="flex flex-col gap-[20px]">
                 <div className="flex flex-col">
-                  <h1 className=" font-roboto font-[800] text-[24px]">
+                  <h1 className=" font-roboto font-[800] text-[20px] sm:text-[24px]">
                     University of Cebu - LM Campus (College)
                   </h1>
                   <span className=" font-roboto font-[800] text-[14px] text-gray-400 italic">
                     2019 - 2023
                   </span>
                 </div>
-                <ul className="font-robot font-[800] text-gray-300 text-[16px]">
+                <ul className="font-robot font-[800] text-gray-300 text-[14px] sm:text-[16px]">
                   <li>- Bachelor of Science in Information Technology</li>
                   <li>- Major in Programming</li>
                 </ul>
@@ -74,43 +74,5 @@ export default function HomeEducation() {
         </div>
       </div>
     </div>
-    // <div className="flex flex-col gap-[30px] ">
-    //   <div className="w-full flex items-center  justify-center">
-    //     <HomeContentTitle title="Educational Attainment" />
-    //   </div>
-
-    //   <div className="flex flex-col md:flex-col justify-center items-center gap-[30px] ">
-    //     <HomeCarousel
-    //       containerClassName="w-full md:w-[650px] h-[400px] md:h-[350px]"
-    //       carouselSettings={settings}
-    //       carouselSlide={images.map((image: any) => (
-    //         <div
-    //           key={image.id}
-    //           className="h-[350px] overflow-hidden bg-black"
-    //         >
-    //           <Image
-    //             unoptimized
-    //             width={4032}
-    //             height={3032}
-    //             src={image.path}
-    //             alt={""}
-    //             className="object-cover w-full h-full dark:opacity-70 opacity-50 bg-black duration-300"
-    //           />
-    //         </div>
-    //       ))}
-    //     />
-    //     <HomeContentDetails
-    //       details={
-    //         <p className="text-white flex-1 ">
-    //           Hey there! I&apos;m Jofel Salado, a software engineer with a year
-    //           of hands-on experience. I thrive on solving complex problems and
-    //           crafting innovative solutions. I&apos;m an avid learner and always
-    //           exploring new technologies. Let&apos;s build something amazing
-    //           together!
-    //         </p>
-    //       }
-    //     />
-    //   </div>
-    // </div>
   );
 }

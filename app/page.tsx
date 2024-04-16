@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import { HomePage } from "./home/home-page";
+import { BackgroundVideo } from "./_components/background-video";
 
 export const metadata: Metadata = {
   title: "Jofel Salado",
@@ -7,8 +8,9 @@ export const metadata: Metadata = {
 };
 export default function Page() {
   return (
-    <main className="h-screen w-screen relative bg-black/50">
-      <div className=" w-full h-screen overflow-auto no-sc ">
+    <main className=" w-full h-full bg-black/50 overflow-hidden">
+      <BackgroundVideo />
+      <div className=" w-full h-full ">
         <HomePage />
       </div>
     </main>
