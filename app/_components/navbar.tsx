@@ -71,7 +71,7 @@ export default function Navbar() {
             </Link>
 
             <Link
-              href={""}
+              href={"/pdf-viewer"}
               target="_blank"
             >
               <span className=" font-roboto font-[800] text-[14px] cursor-pointer">
