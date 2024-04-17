@@ -8,10 +8,8 @@ export const metadata: Metadata = {
 };
 export default function Page() {
   return (
-    <main className=" w-full h-full bg-blacsk/50 overflow-hidden">
-      <div className=" w-full h-full ">
-        <HomePage />
-      </div>
+    <main className=" w-full h-full bg-blacsk/50 overflow-hidden z-[900]">
+      <HomePage />
     </main>
   );
 }

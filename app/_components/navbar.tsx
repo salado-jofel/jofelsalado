@@ -28,7 +28,7 @@ export default function Navbar() {
   }, [darkMode]);
 
   return (
-    <div className=" w-full h-[75px] bg-black sticky top-0  z-50 ">
+    <div className=" w-full h-[75px] bg-black sticky top-0  z-[999] ">
       <div className="px-[30px] h-full  flex flex-row justify-between items-center ">
         <div className="h-full dark:text-white  text-[#8FD400] flex items-start justify-start w-full duration-300">
           {darkMode == false ? (
@@ -92,7 +92,7 @@ export default function Navbar() {
       <div
         className={`${
           openMenu ? "h-[150px] pt-[20px] pb-[10px]   " : "h-[0px]"
-        } dark:border-white border-t border-[#8FD400] overflow-hidden duration-300 flex flex-col justify-between w-full z-50 bg-black  visible md:hiddsen  dark:text-white text-[#8FD400] px-[20px] `}
+        } dark:border-white border-t border-[#8FD400] overflow-hidden duration-300 flex flex-col justify-between w-full z-[999] bg-black  visible md:hiddsen  dark:text-white text-[#8FD400] px-[20px] `}
       >
         <div className="flex-col flex items-start justify-center gap-[8px] z-[999]">
           <Link
