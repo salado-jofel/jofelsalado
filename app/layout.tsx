@@ -9,9 +9,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="">
+      <body className="bg-black">
         <Navbar />
         {children}
+        <BackgroundVideo />
       </body>
     </html>
   );

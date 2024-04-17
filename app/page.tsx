@@ -8,8 +8,7 @@ export const metadata: Metadata = {
 };
 export default function Page() {
   return (
-    <main className=" w-full h-full bg-black/50 overflow-hidden">
-      <BackgroundVideo />
+    <main className=" w-full h-full bg-blacsk/50 overflow-hidden">
       <div className=" w-full h-full ">
         <HomePage />
       </div>
