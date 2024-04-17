@@ -7,14 +7,16 @@ import HomeEducation from "./_sections/home-education";
 
 export function HomePage() {
   return (
-    <article className="pb-[100px] px-[30px]">
-      <section className="max-w-4xl mt-[30px] m-auto space-y-[100px]">
-        <HomeTitle />
-        <HomeAboutMeCarousel />
-        <HomeEducation />
-        <HomeWorkExperience />
-        <HomeTechStack />
-      </section>
-    </article>
+    <main className=" w-full h-full overflow-hidden z-[900]">
+      <article className=" px-[30px]">
+        <section className="max-w-4xl mt-[30px] mb-[60px] m-auto space-y-[100px]">
+          <HomeTitle />
+          <HomeAboutMeCarousel />
+          <HomeEducation />
+          <HomeWorkExperience />
+          <HomeTechStack />
+        </section>
+      </article>
+    </main>
   );
 }

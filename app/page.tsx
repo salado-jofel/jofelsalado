@@ -7,9 +7,5 @@ export const metadata: Metadata = {
   description: "My Portfolio",
 };
 export default function Page() {
-  return (
-    <main className=" w-full h-full bg-blacsk/50 overflow-hidden z-[900]">
-      <HomePage />
-    </main>
-  );
+  return <HomePage />;
 }

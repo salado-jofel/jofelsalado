@@ -61,21 +61,23 @@ export default function Navbar() {
             <RxHamburgerMenu className="dark:text-white text-[#8FD400] text-[24px]" />
           </div>
           <div className=" items-center gap-[15px] hidden md:flex">
+            <Link href={"../"}>
+              <span className=" font-roboto font-[800] text-[14px] cursor-pointer">
+                Home
+              </span>
+            </Link>
+
+            <Link href={"../resume"}>
+              <span className=" font-roboto font-[800] text-[14px] cursor-pointer">
+                Resume
+              </span>
+            </Link>
             <Link
               href={"https://github.com/salado-jofel/my-portfolio"}
               target="_blank"
             >
               <span className=" font-roboto font-[800] text-[14px] cursor-pointer">
                 Github
-              </span>
-            </Link>
-
-            <Link
-              href={"/pdf-viewer"}
-              target="_blank"
-            >
-              <span className=" font-roboto font-[800] text-[14px] cursor-pointer">
-                Resume
               </span>
             </Link>
           </div>
@@ -96,19 +98,36 @@ export default function Navbar() {
       >
         <div className="flex-col flex items-start justify-center gap-[8px] z-[999]">
           <Link
-            className="cursor-pointer scale-100 hover:scale-125 duration-300"
-            href={"https://github.com/salado-jofel/my-portfolio"}
-            target="_blank"
+            href={"../"}
+            onClick={() => {
+              setOpenMenu(false);
+            }}
           >
-            <span className=" font-roboto font-[800] text-[14px] ">Github</span>
+            <span className=" font-roboto font-[800] text-[14px] cursor-pointer">
+              Home
+            </span>
           </Link>
 
           <Link
-            className="cursor-pointer scale-100 hover:scale-125 duration-300"
-            href={""}
+            href={"../resume"}
+            onClick={() => {
+              setOpenMenu(false);
+            }}
+          >
+            <span className=" font-roboto font-[800] text-[14px] cursor-pointer">
+              Resume
+            </span>
+          </Link>
+          <Link
+            onClick={() => {
+              setOpenMenu(false);
+            }}
+            href={"https://github.com/salado-jofel/my-portfolio"}
             target="_blank"
           >
-            <span className=" font-roboto font-[800] text-[14px] ">Resume</span>
+            <span className=" font-roboto font-[800] text-[14px] cursor-pointer">
+              Github
+            </span>
           </Link>
         </div>
         <div
