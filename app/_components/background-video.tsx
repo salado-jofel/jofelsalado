@@ -3,6 +3,7 @@ export function BackgroundVideo() {
   return (
     <>
       <video
+        poster="/assets/images/nightposterblur.png"
         autoPlay
         loop
         muted
@@ -14,6 +15,7 @@ export function BackgroundVideo() {
         />
       </video>
       <video
+        poster="/assets/images/dayposterblur.png"
         autoPlay
         loop
         muted

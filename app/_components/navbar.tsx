@@ -4,6 +4,9 @@ import { MdDarkMode, MdOutlineDarkMode } from "react-icons/md";
 import Image from "next/image";
 import Link from "next/link";
 import { RxHamburgerMenu } from "react-icons/rx";
+import headerlogodark from "../../public/assets/images/logodark.png";
+import headerlogolight from "../../public/assets/images/logolight.png";
+
 export default function Navbar() {
   const [darkMode, setDarkMode] = useState(false);
   const [openMenu, setOpenMenu] = useState(false);
@@ -33,24 +36,24 @@ export default function Navbar() {
         <div className="h-full dark:text-white  text-[#8FD400] flex items-start justify-start w-full duration-300">
           {darkMode == false ? (
             <Image
-              blurDataURL=""
-              placeholder="blur"
               priority={true}
               quality={100}
               unoptimized={true}
               width={2000}
               height={346}
-              src={"/assets/images/logodark.png"}
-              alt={"logo"}
+              src={headerlogodark}
+              alt={"Logo"}
               className="object-contain w-[130px]  md:w-[170px] h-full duration-300"
             />
           ) : (
             <Image
-              unoptimized
+              priority={true}
+              quality={100}
+              unoptimized={true}
               width={2000}
               height={346}
-              src={"/assets/images/logolight.png"}
-              alt={""}
+              src={headerlogolight}
+              alt={"Logo"}
               className="object-contain w-[130px] md:w-[170px] h-full duration-300"
             />
           )}

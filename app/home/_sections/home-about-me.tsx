@@ -5,6 +5,9 @@ import Image from "next/image";
 import HomeContentDetails from "../_components/home-content-details";
 import HomeContentTitle from "../_components/home-content-title";
 import HomeCarousel from "../_components/home-carousel";
+import aboutme1 from "../../../public/assets/images/aboutme1light.jpg";
+import aboutme2 from "../../../public/assets/images/aboutme2o.jpg";
+import aboutme3 from "../../../public/assets/images/aboutme3o.jpg";
 
 export default function HomeAboutMe() {
   var settings = {
@@ -19,15 +22,15 @@ export default function HomeAboutMe() {
   var images = [
     {
       id: 0,
-      path: "/assets/images/aboutme1light.jpg",
+      path: aboutme1,
     },
     {
       id: 1,
-      path: "/assets/images/aboutme2o.jpg",
+      path: aboutme2,
     },
     {
       id: 3,
-      path: "/assets/images/aboutme3o.jpg",
+      path: aboutme3,
     },
   ];
   return (
@@ -54,11 +57,13 @@ export default function HomeAboutMe() {
               className="h-[400px] overflow-hidden bg-black"
             >
               <Image
-                unoptimized
+                quality={100}
+                loading="lazy"
+                placeholder="blur"
                 width={4032}
                 height={3032}
                 src={image.path}
-                alt={""}
+                alt={"About Me Images"}
                 className="object-cover w-full h-full dark:opacity-70 opacity-50 bg-black duration-300"
               />
             </div>

@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 
 export default function HomeTechStackCard({
   iconTitle,
@@ -7,7 +7,7 @@ export default function HomeTechStackCard({
   iconAlt,
 }: {
   iconTitle: string;
-  iconPath: string;
+  iconPath: StaticImageData;
   iconAlt: string;
 }) {
   return (
@@ -17,6 +17,9 @@ export default function HomeTechStackCard({
       </h1>
       <div className=" border-2 p-[25px] rounded-lg dark:border-white border-[#8FD400] dark:group-hover:bg-[#F5F5F7]/60 group-hover:bg-[#8FD400]/60  duration-300">
         <Image
+          quality={100}
+          loading="lazy"
+          placeholder="blur"
           width={100}
           height={100}
           src={iconPath}
