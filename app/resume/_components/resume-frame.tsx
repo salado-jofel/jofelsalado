@@ -1,7 +1,10 @@
 import React from "react";
-import Image from "next/image";
-import resume from "../../../public/assets/images/jflresume.jpg";
-export default function Resume() {
+import Image, { StaticImageData } from "next/image";
+export default function ResumeFrame({
+  resumePath,
+}: {
+  resumePath: StaticImageData;
+}) {
   return (
     <div className="bg-[#8FD400] dark:bg-white w-full p-[30px] rounded-md shadow-lg duration-300">
       <Image
@@ -10,7 +13,7 @@ export default function Resume() {
         placeholder="blur"
         width={2482}
         height={3510}
-        src={resume}
+        src={resumePath}
         alt={"Resume"}
         className="object-contain  duration-300"
       />
