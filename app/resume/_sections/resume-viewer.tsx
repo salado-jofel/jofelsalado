@@ -9,6 +9,7 @@ export default function ResumeViewer() {
       <a
         className="duration-300 scale-100 hover:scale-125"
         href="/assets/jofelsalado.pdf"
+        target="_blank"
         download
       >
         <div className="py-[12px] px-[16px] bg-[#8FD400] shadow-lg whitespace-nowrap font-roboto text-[14px] font-[800] rounded-md text-white dark:bg-white dark:text-black">

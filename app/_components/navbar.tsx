@@ -18,7 +18,7 @@ export default function Navbar() {
     } else {
       setDarkMode(false);
     }
-  }, []); // Include dispatch in the dependency array
+  }, []);
 
   useEffect(() => {
     if (darkMode == true) {
@@ -33,7 +33,10 @@ export default function Navbar() {
   return (
     <div className=" w-full h-[75px] bg-black sticky top-0  z-[999] ">
       <div className="px-[30px] h-full  flex flex-row justify-between items-center ">
-        <div className="h-full dark:text-white  text-[#8FD400] flex items-start justify-start w-full duration-300">
+        <Link
+          href={"../"}
+          className="h-full dark:text-white  text-[#8FD400] flex items-start justify-start w-full duration-300 cursor-pointer"
+        >
           {darkMode == false ? (
             <Image
               priority={true}
@@ -57,7 +60,7 @@ export default function Navbar() {
               className="object-contain w-[130px] md:w-[170px] h-full duration-300"
             />
           )}
-        </div>
+        </Link>
         <div className="h-full dark:text-white text-[#8FD400] font flex items-center gap-[25px] duration-300 justify-center ">
           <div
             className=" visible md:hidden  w-full cursor-pointer"
@@ -68,19 +71,24 @@ export default function Navbar() {
             <RxHamburgerMenu className="dark:text-white text-[#8FD400] text-[24px]" />
           </div>
           <div className=" items-center gap-[15px] hidden md:flex">
-            <Link href={"../"}>
-              <span className=" font-roboto font-[800] text-[14px] cursor-pointer">
-                Home
-              </span>
+            <Link
+              href={"../"}
+              className=" duration-300 scale-100 hover:scale-125"
+            >
+              <span className=" font-roboto font-[800] text-[14px]">Home</span>
             </Link>
 
-            <Link href={"../resume"}>
+            <Link
+              href={"../resume"}
+              className=" duration-300 scale-100 hover:scale-125"
+            >
               <span className=" font-roboto font-[800] text-[14px] cursor-pointer">
                 Resume
               </span>
             </Link>
             <Link
               href={"https://github.com/salado-jofel/my-portfolio"}
+              className=" duration-300 scale-100 hover:scale-125"
               target="_blank"
             >
               <span className=" font-roboto font-[800] text-[14px] cursor-pointer">
@@ -88,14 +96,14 @@ export default function Navbar() {
               </span>
             </Link>
           </div>
-          <div
-            className="cursor-pointer text-[24px] "
+          <button
+            className="cursor-pointer text-[24px] duration-300 scale-100 hover:scale-125"
             onClick={() => {
               setDarkMode(!darkMode);
             }}
           >
             {darkMode === false ? <MdDarkMode /> : <MdOutlineDarkMode />}
-          </div>
+          </button>
         </div>
       </div>
       <div
