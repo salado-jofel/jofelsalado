@@ -28,13 +28,14 @@ export default function HomeWorkExperience() {
                   date={"02/20/2023 - Present"}
                   details={
                     <ul className="font-robot font-[800] text-[14px] sm:text-[16px] dark:text-gray-700 text-white duration-300 space-y-[10px]">
+                      <li>- Building UI/UX of the website</li>
+                      <li>- Web/mobile front-end development</li>
                       <li>
-                        - Bulding and maintaining front-end websites using Next
-                        JS, Typescript and Tailwind CSS
+                        - Maintain front-end related projects for web and mobile
                       </li>
                       <li>
-                        - Bulding and maintaining front-end mobile apps for both
-                        Android and iOS using Flutter
+                        - Collaborate with the team for better system
+                        optimizations
                       </li>
                     </ul>
                   }

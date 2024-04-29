@@ -42,9 +42,9 @@ export default function HomeAboutMe() {
             <p className="text-white flex-1 ">
               Hey there! I&apos;m Jofel Salado, a front-end developer with a
               year of hands-on experience. I thrive on solving complex problems
-              and crafting innovative solutions. I&apos;m an avid learner and
-              always exploring new technologies. Let&apos;s build something
-              amazing together!
+              and crafting innovative solutions with UI/UX. I&apos;m an avid
+              learner and always exploring new technologies. Let&apos;s build
+              something amazing together!
             </p>
           }
         />
