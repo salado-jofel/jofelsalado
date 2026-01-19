@@ -78,14 +78,14 @@ export default function Navbar() {
               <span className=" font-roboto font-[800] text-[14px]">Home</span>
             </Link>
 
-            <Link
+            {/* <Link
               href={"../resume"}
               className=" duration-300 scale-100 hover:scale-125"
             >
               <span className=" font-roboto font-[800] text-[14px] cursor-pointer">
                 Resume
               </span>
-            </Link>
+            </Link> */}
             <Link
               href={"https://github.com/salado-jofel/my-portfolio"}
               className=" duration-300 scale-100 hover:scale-125"
@@ -123,7 +123,7 @@ export default function Navbar() {
             </span>
           </Link>
 
-          <Link
+          {/* <Link
             href={"../resume"}
             onClick={() => {
               setOpenMenu(false);
@@ -132,7 +132,7 @@ export default function Navbar() {
             <span className=" font-roboto font-[800] text-[14px] cursor-pointer">
               Resume
             </span>
-          </Link>
+          </Link> */}
           <Link
             onClick={() => {
               setOpenMenu(false);
